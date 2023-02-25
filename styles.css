@@ -14,13 +14,25 @@ body {
 
 header {
     /* border: 1px solid black; */
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+}
+
+
+#fixed {
+    width: 80vw;
     margin: 10px;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
-header div {
+
+
+
+#fixed div {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
@@ -41,6 +53,8 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .a-link {
@@ -49,9 +63,13 @@ ul {
     font-weight: 600;
 }
 
-#video {
+
+
+#video-section {
     /* border: 1px solid black; */
-    margin: 10px;
+    /* width: 100%;
+    height: auto; */
+    margin: 70px 10px 10px 10px;
     background-color: black;
     border-radius: 5px;
     display: flex;
@@ -60,38 +78,115 @@ ul {
 
 h1 {
     /* border: 1px solid black; */
-    /* padding: 20px; */
     font-size: 50px;
     text-align: center;
 }
 
 #phones-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .phones {
-    border: 1px solid black;
-    display: inline-block;
+    /* border: 1px solid black; */
     max-width: 30%;
     height: auto;
-
 }
 
 .phones-img {
+    /* border: 1px solid black; */
     max-width: 100%;
     height: auto;
+    transition: 250ms all;
+}
+
+.phones-img:hover {
+    margin-left: 0 40px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .phones-description {
+    /* border: 1px solid black; */
+    margin-bottom: -1px;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
 }
 
+.phones div {
+    /* border: 1px solid black; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .phones-button {
+    width: 70px;
+    height: 20px;
     border: 1px solid black;
+    border-radius: 30px;
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.phones-button:hover {
+    box-shadow: 0 0 0.7em 0.1em black;
+    cursor: pointer;
+
+}
+
+#section-form {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#form {
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 20px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+#email {
+    border: none;
+    padding: 10px 60px;
+}
+
+#submit {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .phones-description {
+        font-size: 20px;
+    }
+
+
 }
