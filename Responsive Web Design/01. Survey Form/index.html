@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contest Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" conteny="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Contest Form</h1>
+    <p id="description">To join the contest you have to register first</p>
+    <form action="#" id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name"> Name </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label id="email-label" for="email"> Email </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label id="number-label" for="number"> Age </label>
+            <input type="number" id="number" name="age" min="16" max="90" placeholder="Enter your age">
+            <label for="dropdown"> Select your sex: </label>
+            <select id="dropdown">
+                <option> (select an option) </option>
+                <option> Male </option>
+                <option> Female </option>
+                <option> Another </option>
+            </select>
+        </fieldset>
+        <fieldset> Chose your type of race:
+            <label for="sprint"> Sprint </label>
+            <input type="radio" id="sprint" name="race" value="sprint">
+            <label for="marathon"> Marathon </label>
+            <input type="radio" id="marathon" name="race" value="marathon">
+            <label for="term"> I accept the <a href="#"> terms and conditions</a></label>
+            <input type="checkbox" id="term" name="term" value="term">
+            <label for="news"> I want to receive news on email</label>
+            <input type="checkbox" id="news" name="news" value="news">
+        </fieldset>
+        <fieldset> Any comments or suggestions?
+            <textarea> Enter your comment here... </textarea>
+        </fieldset>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
