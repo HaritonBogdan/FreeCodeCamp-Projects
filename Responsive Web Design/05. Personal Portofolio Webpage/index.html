@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portofolio Webpage</title>
 </head>
 
 <body>
     <header>
         <nav id="navbar">
             <ul>
-                <li>About</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a class="active" href="#welcome-section">About</a></li>
+                <li><a class="active" href="#project-tile">Work</a></li>
+                <li><a class="active" href="">Contact</a></li>
             </ul>
         </nav>
         <section id="welcome-section">
@@ -24,8 +29,22 @@
     </header>
     <main>
         <section class="project-tile">
-            <a href="../04. Product Landing Page/index.html"></a>
+            <a href="../04. Product Landing Page/index.html">
+                <img src="./Product Landing Page.PNG" alt="Product Landing Page">
+                <p>Product Landing Page</p>
+            </a>
+            <a href="../03. Tehnical Documentation Page/index.html">
+                <img src="./Tehnical Documentation Page.PNG" alt="Tehnical Documentation Page">
+                <p>Tehnical Documentation Page</p>
+            </a>
+            <a href="../02. Tribute Page/index.html">
+                <img src="./Tribute Page.PNG" alt="Tribute Page">
+                <p>Tribute Page</p>
+            </a>
         </section>
+        <footer>
+            <a href="https://github.com/HaritonBogdan">GitHub</a>
+        </footer>
     </main>
 </body>
 
